@@ -4,7 +4,7 @@
         <thead class="bg-gray-100 dark:bg-gray-700">
             <tr>
                 @foreach ($headers as $header)
-                    <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">{{ $header }}</th>
+                    <th class="px-4 py-2 border border-gray-300 dark:border-gray-600 text-center">{{ $header }}</th>
                 @endforeach
             </tr>
         </thead>
@@ -12,7 +12,7 @@
         @foreach ($rows as $row)
             <tr class="odd:bg-white even:bg-gray-50 dark:odd:bg-gray-800 dark:even:bg-gray-700">
                 @foreach ($row as $cell)
-                    <td class="px-4 py-2 border border-gray-300 dark:border-gray-600">{!! $cell !!}</td>
+                    <td class="px-4 py-2 border border-gray-300 dark:border-gray-600 text-center">{!! $cell !!}</td>
                 @endforeach
             </tr>
         @endforeach
